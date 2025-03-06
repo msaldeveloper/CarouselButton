@@ -16,7 +16,10 @@ jobs:
     # Instalar Swift manualmente
     - name: Install Swift 6.0.0
       run: |
-        curl -sSL https://swift.org/builds/swift-6.0.0-release/xcode/swift-6.0.0-RELEASE/swift-6.0.0-RELEASE-osx.pkg -o swift.pkg
+        curl -sSL https://swift.org/download/#releases -o swift-download.html
+        swift_version="6.0.0"
+        download_url=$(grep -o 'https://swift.org/builds.*\.pkg' swift-download.html | head -n 1)
+        curl -sSL "$download_url" -o swift.pkg
         sudo installer -pkg swift.pkg -target /
 
     - name: Build

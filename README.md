@@ -1,6 +1,7 @@
 # CoruselButton - Swift Carousel View
 
 CoruselButton is a SwiftUI-based carousel view that allows you to display a list of items (strings), customize the appearance of each item, and handle button actions when a carousel item is selected.
+![carouselButton](https://github.com/user-attachments/assets/7ec3b408-1812-4868-ae86-8f52452511d1)
 
 This package allows you to configure:
 - The list of items (titles)

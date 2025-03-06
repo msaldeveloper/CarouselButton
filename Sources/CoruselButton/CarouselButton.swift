@@ -13,6 +13,16 @@ public struct CarouselButton: View {
     public var frame: (CGFloat, CGFloat) = (300, 50)
     public var completion: (String) -> Text
     public var buttonAction: (String) -> Void
+    
+    public init(items: [String], color: Color, spacing: CGFloat, cornerRadius: CGFloat, frame: (CGFloat, CGFloat), completion: @escaping (String) -> Text, buttonAction: @escaping (String) -> Void) {
+        self.items = items
+        self.color = color
+        self.spacing = spacing
+        self.cornerRadius = cornerRadius
+        self.frame = frame
+        self.completion = completion
+        self.buttonAction = buttonAction
+    }
 
     public var body: some View {
         ScrollView(.horizontal) {

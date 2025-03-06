@@ -4,7 +4,8 @@ import SwiftUI
 import Foundation
 @available(iOS 15.0, *)
 @available(macOS 12.0, *)
-public struct CaruselButton: View {
+
+public struct CarouselButton: View {
     public var items: [String]
     public var color: Color = Color.mint
     public var spacing: CGFloat = 20

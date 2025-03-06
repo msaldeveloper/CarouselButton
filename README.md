@@ -1,6 +1,6 @@
-# CoruselButton - Swift Carousel View
+# CarouselButton - Swift Carousel View
 
-CoruselButton is a SwiftUI-based carousel view that allows you to display a list of items (strings), customize the appearance of each item, and handle button actions when a carousel item is selected.
+CarouselButton is a SwiftUI-based carousel view that allows you to display a list of items (strings), customize the appearance of each item, and handle button actions when a carousel item is selected.
 
 
 ![carouselButton](https://github.com/user-attachments/assets/7ec3b408-1812-4868-ae86-8f52452511d1)
@@ -16,11 +16,11 @@ This package allows you to configure:
 
 ## Installation
 
-You can add the CoruselButton to your project via Swift Package Manager. 
+You can add the CarouselButton to your project via Swift Package Manager. 
 
 1. Open your project in Xcode.
 2. Navigate to `File > Swift Packages > Add Package Dependency...`
-3. Paste the following URL into the package repository URL field: https://github.com/msaldeveloper/CoruselButton
+3. Paste the following URL into the package repository URL field: https://github.com/msaldeveloper/CarouselButton
 
 4. Follow the prompts to add the package to your project.
 
@@ -29,7 +29,9 @@ You can add the CoruselButton to your project via Swift Package Manager.
 You can use the `CaruselView` to display a carousel with a list of strings. The basic usage is as follows:
 
 ```swift
-CaruselView(
+import CarouselButton
+
+CarouselButton(
  items: ["Item 1", "Item 2", "Item 3"],
  color: Color.green,
  spacing: 5,

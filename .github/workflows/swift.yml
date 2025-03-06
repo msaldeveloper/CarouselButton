@@ -16,13 +16,18 @@ jobs:
     steps:
     - uses: actions/checkout@v4
 
+    # Actualiza a la última versión disponible de setup-swift
     - name: Set up Swift 6.0
-      uses: apple/actions/setup-swift@v2
+      uses: apple/actions/setup-swift@v3
       with:
         swift-version: '6.0.0'
 
     - name: Build
       run: swift build -v
+
+    - name: Run tests
+      run: swift test -v
+
 
     - name: Run tests
       run: swift test -v

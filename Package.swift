@@ -17,7 +17,7 @@ let package = Package(
         .target(
             name: "CarouselButton"),
         .testTarget(
-            name: "CarouselButton",
+            name: "CarouselButtonTests",
             dependencies: ["CarouselButton"]
         ),
     ]

@@ -13,11 +13,11 @@ jobs:
     steps:
     - uses: actions/checkout@v4
 
-    # Actualiza a la versión v1 de setup-swift
-    - name: Set up Swift 6.0
-      uses: apple/actions/setup-swift@v1
-      with:
-        swift-version: '6.0.0'
+    # Instalar Swift manualmente
+    - name: Install Swift 6.0.0
+      run: |
+        curl -sSL https://swift.org/builds/swift-6.0.0-release/xcode/swift-6.0.0-RELEASE/swift-6.0.0-RELEASE-osx.pkg -o swift.pkg
+        sudo installer -pkg swift.pkg -target /
 
     - name: Build
       run: swift build -v
